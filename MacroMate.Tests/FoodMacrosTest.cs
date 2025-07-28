@@ -1,4 +1,5 @@
 namespace MacroMate.Tests;
+
 public class FoodMacrosTests
 {
     [TestCase(0, 0, 0)]
@@ -16,5 +17,11 @@ public class FoodMacrosTests
         Assert.That(test.Carbs, Is.EqualTo(carbs));
         Assert.That(test.Fats, Is.EqualTo(fats));
         Assert.That(test.Proteins, Is.EqualTo(proteins));
+    }
+
+    [TestCase(-10, 0, 0)]
+    public void FoodMacrosConstructor_invalid(float carbs, float proteins, float fats)
+    {
+        Assert.Throws<Exception> (() => new FoodMacros(carbs, proteins, fats));
     }
 }
