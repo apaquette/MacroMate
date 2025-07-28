@@ -24,7 +24,8 @@ public class Nutrients
 
     public Nutrients Scale(float grams)
     {
-        throw new NotImplementedException();
+        float factor = grams / Portion;
+        return new(grams, (int)(Calories * factor), Proteins * factor, Carbohydrates * factor, Fats * factor);
     }
 }
 
