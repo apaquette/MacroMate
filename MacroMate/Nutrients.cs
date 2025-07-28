@@ -1,25 +1,20 @@
 namespace MacroMate;
 
-public class FoodMacros
+public class Nutrients
 {
-    public float Carbs { get; }
+    public int Calories { get; }
     public float Proteins { get; }
+    public float Carbohydrates { get; }
     public float Fats { get; }
 
-    public FoodMacros(float carbs, float proteins, float fats)
+    public Nutrients(int Calories, float proteins, float carbs, float fats)
     {
         if (carbs < 0 || proteins < 0 || fats < 0)
             throw new InvalidMacroValueException("Macros cannot be negative");
 
-
-        Carbs = carbs;
         Proteins = proteins;
+        Carbohydrates = carbs;
         Fats = fats;
-    }
-
-    public int Calories()
-    {
-        return 0;
     }
 }
 
