@@ -31,6 +31,7 @@ public class NutrientsTest
         Assert.Throws<InvalidNutrientValueException>(() => new Nutrients(portion, cals, proteins, carbs, fats));
     }
     [TestCase(50)]
+    [TestCase(100)]
     public void NutrientsScale_valid(float portion)
     {
         Nutrients test = new(100, 45, 10, 1, 2);
