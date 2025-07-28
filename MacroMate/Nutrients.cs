@@ -12,8 +12,8 @@ public class Nutrients
     {
         if (portion == 0)
             throw new InvalidNutrientValueException("Portion size cannot be zero");
-        if (cals < 0 || carbs < 0 || proteins < 0 || fats < 0)
-            throw new InvalidNutrientValueException("Nutrients cannot be negative");
+        if (portion < 0 || cals < 0 || carbs < 0 || proteins < 0 || fats < 0)
+            throw new InvalidNutrientValueException("Values cannot be negative");
 
         Portion = portion;
         Calories = cals;
