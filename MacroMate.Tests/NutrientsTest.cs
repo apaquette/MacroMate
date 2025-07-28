@@ -33,10 +33,14 @@ public class NutrientsTest
     [TestCase(50)]
     public void NutrientsScale_valid(float portion)
     {
-        Nutrients test = new(100, 45, 10, 1, 0);
+        Nutrients test = new(100, 45, 10, 1, 2);
         Nutrients result = test.Scale(portion);
         float factor = portion / 100f;
-        Nutrients expected = new(100 * factor, (int)(45 * factor), 10 * factor, 1 * factor, 0);
-        Assert.That(result, Is.EqualTo(expected));
+        
+        Assert.That(result.Portion, Is.EqualTo(portion));
+        Assert.That(result.Calories, Is.EqualTo((int)(45 * factor)));
+        Assert.That(result.Proteins, Is.EqualTo(10 * factor));
+        Assert.That(result.Carbohydrates, Is.EqualTo(1 * factor));
+        Assert.That(result.Fats, Is.EqualTo(2 * factor));
     }
 }
