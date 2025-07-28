@@ -10,7 +10,7 @@ public class Nutrients
     public Nutrients(int cals, float proteins, float carbs, float fats)
     {
         if (carbs < 0 || proteins < 0 || fats < 0)
-            throw new InvalidMacroValueException("Macros cannot be negative");
+            throw new InvalidNutrientValueException("Nutrients cannot be negative");
 
         Calories = cals;
         Proteins = proteins;
@@ -19,9 +19,9 @@ public class Nutrients
     }
 }
 
-public class InvalidMacroValueException : Exception
+public class InvalidNutrientValueException : Exception
 {
     //public InvalidMacroValueException() { }
-    public InvalidMacroValueException(string msg) : base(msg) { }
+    public InvalidNutrientValueException(string msg) : base(msg) { }
     //public InvalidMacroValueException(string msg, Exception inner) : base(msg, inner) { }
 }

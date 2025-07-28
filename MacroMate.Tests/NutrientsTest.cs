@@ -36,6 +36,6 @@ public class NutrientsTest
     [TestCase(0, -10, -10, -10)]
     public void FoodMacrosConstructor_invalid(int cals, float proteins, float carbs, float fats)
     {
-        Assert.Throws<InvalidMacroValueException>(() => new Nutrients(cals, proteins, carbs, fats));
+        Assert.Throws<InvalidNutrientValueException>(() => new Nutrients(cals, proteins, carbs, fats));
     }
 }
