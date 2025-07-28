@@ -9,7 +9,7 @@ public class Nutrients
 
     public Nutrients(int cals, float proteins, float carbs, float fats)
     {
-        if (carbs < 0 || proteins < 0 || fats < 0)
+        if (cals < 0 || carbs < 0 || proteins < 0 || fats < 0)
             throw new InvalidNutrientValueException("Nutrients cannot be negative");
 
         Calories = cals;
