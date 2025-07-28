@@ -9,8 +9,9 @@ public class FoodMacros
     public FoodMacros(float carbs, float proteins, float fats)
     {
         if (carbs < 0) throw new InvalidMacroValueException("Macros cannot be negative");
+        if (proteins < 0) throw new InvalidMacroValueException("Macros cannot be negative");
 
-        
+
         Carbs = carbs;
         Proteins = proteins;
         Fats = fats;
