@@ -8,7 +8,7 @@ public class NutrientsTest
     [TestCase(100, 0, 0, 100, 0)]
     [TestCase(100, 0, 0, 0, 100)]
     [TestCase(100, 100, 100, 100, 100)]
-    public void NutrientsConstructor_valid(float portion, int cals, float proteins, float carbs, float fats)
+    public void NutrientsConstructor_valid(float portion, float cals, float proteins, float carbs, float fats)
     {
         Nutrients test = new(portion, cals, proteins, carbs, fats);
         Assert.That(test.GetType(), Is.EqualTo(typeof(Nutrients)));
@@ -26,7 +26,7 @@ public class NutrientsTest
     [TestCase(100, -10, -10, -10, -10)]
     [TestCase(0, 0, 0, 0, 0)]
     [TestCase(-10, 0, 0, 0, 0)]
-    public void NutrientsConstructor_invalid(float portion, int cals, float proteins, float carbs, float fats)
+    public void NutrientsConstructor_invalid(float portion, float cals, float proteins, float carbs, float fats)
     {
         Assert.Throws<InvalidNutrientValueException>(() => new Nutrients(portion, cals, proteins, carbs, fats));
     }
@@ -36,9 +36,9 @@ public class NutrientsTest
         Nutrients test = new(100, 45, 10, 1, 2);
         Nutrients result = test.Scale(portion);
         float factor = portion / 100f;
-        
+
         Assert.That(result.Portion, Is.EqualTo(portion));
-        Assert.That(result.Calories, Is.EqualTo((int)(45 * factor)));
+        Assert.That(result.Calories, Is.EqualTo(45 * factor));
         Assert.That(result.Proteins, Is.EqualTo(10 * factor));
         Assert.That(result.Carbohydrates, Is.EqualTo(1 * factor));
         Assert.That(result.Fats, Is.EqualTo(2 * factor));

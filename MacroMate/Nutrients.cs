@@ -3,12 +3,12 @@ namespace MacroMate;
 public class Nutrients
 {
     public float Portion { get; }
-    public int Calories { get; }
+    public float Calories { get; }
     public float Proteins { get; }
     public float Carbohydrates { get; }
     public float Fats { get; }
 
-    public Nutrients(float portion, int cals, float proteins, float carbs, float fats)
+    public Nutrients(float portion, float cals, float proteins, float carbs, float fats)
     {
         if (portion == 0)
             throw new InvalidNutrientValueException("Portion size cannot be zero");
@@ -25,7 +25,7 @@ public class Nutrients
     public Nutrients Scale(float grams)
     {
         float factor = grams / Portion;
-        return new(grams, (int)(Calories * factor), Proteins * factor, Carbohydrates * factor, Fats * factor);
+        return new(grams, Calories * factor, Proteins * factor, Carbohydrates * factor, Fats * factor);
     }
 }
 
