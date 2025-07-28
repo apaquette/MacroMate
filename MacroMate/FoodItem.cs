@@ -1,14 +1,10 @@
 ﻿namespace MacroMate;
 
-public class FoodItem
+public class FoodItem(string name, float carbs, float proteins, float fats, DateTime date)
 {
-    public string Name { get; private set; }
-    public float Carbs { get; private set; }
-    public float Proteins { get; private set; }
-    public float Fats { get; private set; }
-    public DateTime Date { get; private set; }
-    public FoodItem(string name, float carbs, float proteins, float fats, DateTime date)
-    {
-
-    }
+    public string Name { get; } = name;
+    public float Carbs { get; } = carbs;
+    public float Proteins { get; } = proteins;
+    public float Fats { get; } = fats;
+    public DateTime Date { get; } = date;
 }
