@@ -27,13 +27,20 @@ public class NutrientsTest
         Assert.That(test.Fats, Is.EqualTo(fats));
     }
 
+    [TestCase(-10, 0, 0, 0)]
     [TestCase(0, -10, 0, 0)]
     [TestCase(0, 0, -10, 0)]
     [TestCase(0, 0, 0, -10)]
-    [TestCase(0, -10, -10, 0)]
+    [TestCase(-10, -10, 0, 0)]
+    [TestCase(-10, 0, -10, 0)]
+    [TestCase(-10, 0, 0, -10)]
     [TestCase(0, -10, 0, -10)]
     [TestCase(0, 0, -10, -10)]
     [TestCase(0, -10, -10, -10)]
+    [TestCase(-10, 0, -10, -10)]
+    [TestCase(-10, -10, 0, -10)]
+    [TestCase(0, -10, -10, 0)]
+    [TestCase(-10, -10, -10, -10)]
     public void FoodMacrosConstructor_invalid(int cals, float proteins, float carbs, float fats)
     {
         Assert.Throws<InvalidNutrientValueException>(() => new Nutrients(cals, proteins, carbs, fats));
