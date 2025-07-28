@@ -10,7 +10,7 @@ public class NutrientsTest
     [TestCase(0,100, 0, 100)]
     [TestCase(0,0, 100, 100)]
     [TestCase(0,100, 100, 100)]
-    public void NutrientsConstructor_valid(int cals, float carbs, float proteins, float fats)
+    public void NutrientsConstructor_valid(int cals, float proteins, float carbs, float fats)
     {
         Nutrients test = new(cals, proteins, carbs, fats);
         Assert.That(test.GetType(), Is.EqualTo(typeof(Nutrients)));
@@ -27,7 +27,7 @@ public class NutrientsTest
     [TestCase(0, -10, 0, -10)]
     [TestCase(0, 0, -10, -10)]
     [TestCase(0, -10, -10, -10)]
-    public void FoodMacrosConstructor_invalid(int cals, float carbs, float proteins, float fats)
+    public void FoodMacrosConstructor_invalid(int cals, float proteins, float carbs, float fats)
     {
         Assert.Throws<InvalidMacroValueException>(() => new Nutrients(cals, proteins, carbs, fats));
     }
