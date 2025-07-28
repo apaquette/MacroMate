@@ -30,4 +30,13 @@ public class NutrientsTest
     {
         Assert.Throws<InvalidNutrientValueException>(() => new Nutrients(portion, cals, proteins, carbs, fats));
     }
+    [TestCase(50)]
+    public void NutrientsScale_valid(float portion)
+    {
+        Nutrients test = new(100, 45, 10, 1, 0);
+        Nutrients result = test.Scale(portion);
+        float factor = portion / 100f;
+        Nutrients expected = new(100 * factor, (int)(45 * factor), 10 * factor, 1 * factor, 0);
+        Assert.That(result, Is.EqualTo(expected));
+    }
 }
