@@ -10,6 +10,7 @@ public class FoodMacros
     {
         if (carbs < 0) throw new InvalidMacroValueException("Macros cannot be negative");
         if (proteins < 0) throw new InvalidMacroValueException("Macros cannot be negative");
+        if (fats < 0) throw new InvalidMacroValueException("Macros cannot be negative");
 
 
         Carbs = carbs;
