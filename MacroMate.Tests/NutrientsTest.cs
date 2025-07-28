@@ -2,14 +2,21 @@ namespace MacroMate.Tests;
 
 public class NutrientsTest
 {
-    [TestCase(0,0, 0, 0)]
-    [TestCase(0,100, 0, 0)]
-    [TestCase(0,0, 100, 0)]
-    [TestCase(0,0, 0, 100)]
-    [TestCase(0,100, 100, 0)]
-    [TestCase(0,100, 0, 100)]
-    [TestCase(0,0, 100, 100)]
-    [TestCase(0,100, 100, 100)]
+    [TestCase(0, 0, 0, 0)]
+    [TestCase(100, 0, 0, 0)]
+    [TestCase(0, 100, 0, 0)]
+    [TestCase(0, 0, 100, 0)]
+    [TestCase(0, 0, 0, 100)]
+    [TestCase(100, 100, 0, 0)]
+    [TestCase(100, 0, 100, 0)]
+    [TestCase(100, 0, 0, 100)]
+    [TestCase(0, 100, 0, 100)]
+    [TestCase(0, 0, 100, 100)]
+    [TestCase(0, 100, 100, 100)]
+    [TestCase(100, 0, 100, 100)]
+    [TestCase(100, 100, 0, 100)]
+    [TestCase(100, 100, 100, 0)]
+    [TestCase(100, 100, 100, 100)]
     public void NutrientsConstructor_valid(int cals, float proteins, float carbs, float fats)
     {
         Nutrients test = new(cals, proteins, carbs, fats);
