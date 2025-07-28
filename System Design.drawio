@@ -307,7 +307,7 @@
         </mxGraphModel>
     </diagram>
     <diagram id="_DGp-XIO5CFrDi0shttd" name="Class Diagram">
-        <mxGraphModel dx="814" dy="671" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+        <mxGraphModel dx="2497" dy="671" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
             <root>
                 <mxCell id="0"/>
                 <mxCell id="1" parent="0"/>
@@ -337,28 +337,31 @@
                     <mxGeometry y="104" width="160" height="8" as="geometry"/>
                 </mxCell>
                 <mxCell id="7eKx9mFKqvGwDHMkVhRY-1" value="Nutrients" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-                    <mxGeometry x="480" y="440" width="180" height="190" as="geometry"/>
+                    <mxGeometry x="480" y="440" width="180" height="216" as="geometry"/>
                 </mxCell>
-                <mxCell id="HgdjwuO3dufNoziF6Q3m-42" value="/Calories: int" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="7eKx9mFKqvGwDHMkVhRY-1">
+                <mxCell id="HgdjwuO3dufNoziF6Q3m-51" value="/Portion: float" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="7eKx9mFKqvGwDHMkVhRY-1">
                     <mxGeometry y="26" width="180" height="26" as="geometry"/>
                 </mxCell>
-                <mxCell id="TdGKnOu7zhTbfg-XOS5--6" value="/Protein: float" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="7eKx9mFKqvGwDHMkVhRY-1" vertex="1">
+                <mxCell id="HgdjwuO3dufNoziF6Q3m-42" value="/Calories: int" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="7eKx9mFKqvGwDHMkVhRY-1">
                     <mxGeometry y="52" width="180" height="26" as="geometry"/>
                 </mxCell>
-                <mxCell id="HgdjwuO3dufNoziF6Q3m-41" value="/Carbohydrates: float" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="7eKx9mFKqvGwDHMkVhRY-1">
+                <mxCell id="TdGKnOu7zhTbfg-XOS5--6" value="/Protein: float" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="7eKx9mFKqvGwDHMkVhRY-1" vertex="1">
                     <mxGeometry y="78" width="180" height="26" as="geometry"/>
                 </mxCell>
-                <mxCell id="TdGKnOu7zhTbfg-XOS5--7" value="/Fats: float" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="7eKx9mFKqvGwDHMkVhRY-1" vertex="1">
+                <mxCell id="HgdjwuO3dufNoziF6Q3m-41" value="/Carbohydrates: float" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="7eKx9mFKqvGwDHMkVhRY-1">
                     <mxGeometry y="104" width="180" height="26" as="geometry"/>
                 </mxCell>
+                <mxCell id="TdGKnOu7zhTbfg-XOS5--7" value="/Fats: float" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="7eKx9mFKqvGwDHMkVhRY-1" vertex="1">
+                    <mxGeometry y="130" width="180" height="26" as="geometry"/>
+                </mxCell>
                 <mxCell id="7eKx9mFKqvGwDHMkVhRY-3" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" parent="7eKx9mFKqvGwDHMkVhRY-1" vertex="1">
-                    <mxGeometry y="130" width="180" height="8" as="geometry"/>
+                    <mxGeometry y="156" width="180" height="8" as="geometry"/>
                 </mxCell>
                 <mxCell id="HgdjwuO3dufNoziF6Q3m-44" value="/Scale(float grams): Nutrients" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="7eKx9mFKqvGwDHMkVhRY-1">
-                    <mxGeometry y="138" width="180" height="26" as="geometry"/>
+                    <mxGeometry y="164" width="180" height="26" as="geometry"/>
                 </mxCell>
                 <mxCell id="HgdjwuO3dufNoziF6Q3m-47" value="+Operator" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="7eKx9mFKqvGwDHMkVhRY-1">
-                    <mxGeometry y="164" width="180" height="26" as="geometry"/>
+                    <mxGeometry y="190" width="180" height="26" as="geometry"/>
                 </mxCell>
                 <mxCell id="7eKx9mFKqvGwDHMkVhRY-7" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=none;endFill=0;" parent="1" source="7eKx9mFKqvGwDHMkVhRY-1" target="TdGKnOu7zhTbfg-XOS5--8" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
