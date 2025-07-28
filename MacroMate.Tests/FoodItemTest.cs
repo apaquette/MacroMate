@@ -2,6 +2,13 @@ namespace MacroMate.Tests;
 public class FoodItemTests
 {
     [TestCase("Dubious", 0, 0, 0, "2025, 1, 1")]
+    [TestCase("Dubious", 100, 0, 0, "2025, 1, 1")]
+    [TestCase("Dubious", 0, 100, 0, "2025, 1, 1")]
+    [TestCase("Dubious", 0, 0, 100, "2025, 1, 1")]
+    [TestCase("Dubious", 100, 100, 0, "2025, 1, 1")]
+    [TestCase("Dubious", 100, 0, 100, "2025, 1, 1")]
+    [TestCase("Dubious", 0, 100, 100, "2025, 1, 1")]
+    [TestCase("Dubious", 100, 100, 100, "2025, 1, 1")]
     public void FoodItemConstructor_valid(string name, float carbs, float proteins, float fats, DateTime date)
     {
         FoodItem test = new(name, carbs, proteins, fats, date);
