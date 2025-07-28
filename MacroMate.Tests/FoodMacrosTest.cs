@@ -22,6 +22,10 @@ public class FoodMacrosTests
     [TestCase(-10, 0, 0)]
     [TestCase(0, -10, 0)]
     [TestCase(0, 0, -10)]
+    [TestCase(-10, -10, 0)]
+    [TestCase(-10, 0, -10)]
+    [TestCase(0, -10, -10)]
+    [TestCase(-10, -10, -10)]
     public void FoodMacrosConstructor_invalid(float carbs, float proteins, float fats)
     {
         Assert.Throws<InvalidMacroValueException>(() => new FoodMacros(carbs, proteins, fats));
