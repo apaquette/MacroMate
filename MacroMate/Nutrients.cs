@@ -10,6 +10,8 @@ public class Nutrients
 
     public Nutrients(float portion, int cals, float proteins, float carbs, float fats)
     {
+        if (portion == 0)
+            throw new InvalidNutrientValueException("Portion size cannot be zero");
         if (cals < 0 || carbs < 0 || proteins < 0 || fats < 0)
             throw new InvalidNutrientValueException("Nutrients cannot be negative");
 
